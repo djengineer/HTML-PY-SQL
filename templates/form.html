@@ -1,0 +1,28 @@
+{%extends "layout.html"%}
+
+{%block title%}
+My site meta title page one
+{%endblock%}
+
+{%block content%}
+<div class="container">
+	<h2>Server Messages</h2>
+	<p>{{ display_text }}</p>
+
+	<hr>
+	<form action = "/form" method = "post">
+	         <p>Enter User Name:</p>
+	         <p><input type = "text" name = "username" /></p>
+	         <p><input type = "text" name = "password" /></p>
+	         <p><input type = "submit" value = "submit" /></p>
+	</form> 
+	<div class="col-md-12">
+            Links:
+            <br>
+            <a href="/form">/form</a><br>
+            <a href="/read_db">/read_db</a>
+
+          </div>
+</div><!-- Container -->
+
+{%endblock%}
